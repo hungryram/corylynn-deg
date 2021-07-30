@@ -1,0 +1,113 @@
+/* TYPOGRAPHY */
+
+p {
+    line-height: 1.7;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+    font-family: 'Forum', cursive;
+}
+
+/* OVERWRITE */
+
+
+.uk-white {
+    color: #fff;
+}
+
+p.hr-dark {
+    color: #01031f;
+}
+
+.uk-dim {
+    color: rgb(187 187 187 / 70%);
+}
+
+a.uk-button.uk-button-secondary {
+    background: #fff;
+    color: #01031f;
+    border-radius: 50px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+a.uk-button.uk-button-primary {
+    background: #E3A6AE;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+a:hover {
+    text-decoration: none!important;
+}
+
+.accent {
+    color: #f7b5a2;
+}
+
+.uk-padding-xlarge {
+    padding: 120px;
+}
+
+/* NAVBAR */
+
+nav.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: #fff;
+}
+
+div.top-navbar ul.uk-navbar-nav>li>a {
+    min-height: 40px;
+}
+
+/* HERO */
+
+div.hero-inner {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px 30px;
+
+}
+
+div.hero-inner h1 {
+    font-family: 'Dancing Script', cursive;
+    border: 1px solid #EECECE;
+    padding: 20px;
+    font-size: 3rem;
+
+}
+
+/* SECTION 1 */
+
+img.flower {
+    position: absolute;
+    left: 0;
+    width: 170px;
+    transform: rotate(45deg);
+}
+
+/* COLUMN */
+
+div.bg-box:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    background: #e7c0c9;
+    width: 100%;
+    height: 300px;
+    top: -50px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #222;
+}
+
+.hr-legals li {
+    display: inline-block;
+    margin-right: 10px;
+}
