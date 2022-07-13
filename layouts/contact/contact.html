@@ -1,33 +1,52 @@
 {{ define "main" }}
 <div class="uk-section">
-    <div class="uk-container uk-container-large">
-        <div uk-grid>
-            <div class="uk-width-1-2@s">
-                <h2>Get in touch</h2>
-                <p>{{ .Params.body }}</p>
-                <ul class="uk-list">
-                    <li><a href="mailto:{{ .Site.Data.profile.contact_information.email }}"><span href="#" uk-icon="icon: mail" class="uk-margin-small-right"></span><span class="uk-text-middle">{{ .Site.Data.profile.contact_information.email }}</span></a></li>
-                  </ul>
-                <h6 class="uk-text-small">Follow Us</h6>
-                {{ if .Site.Data.profile.social_media.instagram }}<a href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>{{ end }}
-                {{ if .Site.Data.profile.social_media.facebook }}<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>{{ end }}
-                {{ if .Site.Data.profile.social_media.pinterest }}<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="pinterest"></a>{{ end }}
-                {{ if .Site.Data.profile.social_media.twitter }}<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="twitter"></a>{{ end }}
+    <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" style="background: #F5F5F5" uk-grid>
+        <div class="uk-card-media-left uk-cover-container">
+            <img src="https://res.cloudinary.com/hungryram19/image/upload/v1628231181/corylynn-deg/corylynn-deg-designs/wedding-table-background_fdpixd.jpg" alt="" uk-cover>
+            <canvas height="500"></canvas>
+        </div>
+        <div class="uk-flex uk-flex-middle uk-flex-center">
+            <div class="uk-width-large">
+                <div class="uk-card-body">
+                    <h4>Work with the best</h4>
+                    <h1 class="uk-margin-remove">Contact Corylnn Deg</h1>
+                    <p>To book an event or inquiries, please complete the form below. I'm so excited to hear from you!</p>
+                    <ul class="uk-list uk-margin-medium-top">
+                        <li><a href="mailto:{{ .Site.Data.profile.contact_information.email }}" class="uk-dark"><span href="#" uk-icon="icon: mail" class="uk-margin-small-right"></span><span class="uk-text-middle">{{ .Site.Data.profile.contact_information.email }}</span></a></li>
+                      </ul>
+                    {{ if .Site.Data.profile.social_media.instagram }}<a href="" class="uk-margin-small-right" uk-icon="instagram"></a>{{ end }}
+                    {{ if .Site.Data.profile.social_media.facebook }}<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>{{ end }}
+                    {{ if .Site.Data.profile.social_media.pinterest }}<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="pinterest"></a>{{ end }}
+                    {{ if .Site.Data.profile.social_media.twitter }}<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="twitter"></a>{{ end }}
+                    <div class="uk-margin-medium-top">
+                        <a href="#contact-form" class="uk-button uk-button-secondary" uk-scroll>Inquire about services</a>
+                    </div>
+                </div>
             </div>
-            <div class="uk-width-1-2@s">
-                <div>
-                    <form action="/thank-you" class="uk-grid-small" uk-grid data-netlify="true" name="Contact Form" method="POST" data-netlify-recaptcha="true">
-                        <div class="uk-width-1-2@s">
-                            <input class="uk-input" type="text" placeholder="Name">
-                        </div>
-                        <div class="uk-width-1-2@s">
-                            <input class="uk-input" type="text" placeholder="Email">
+        </div>
+    </div>
+</div>
+<div class="uk-section uk-section-small">
+    <div class="uk-container uk-container-xsmall contact-container">
+        <div class="uk-flex uk-flex-middle">
+            <div class="uk-width-1-1">
+                <div class="form-container">
+                    <form action="/thank-you" class="uk-grid-small" uk-grid data-netlify="true" name="Contact Form" method="POST" data-netlify-recaptcha="true" id="contact-form">
+                        <div class="uk-width-1-1">
+                            <label class="uk-form-label" for="form-stacked-text">Name</label>
+                            <input class="uk-input" type="text" name="Name">
                         </div>
                         <div class="uk-width-1-1">
-                            <input class="uk-input" type="text" placeholder="Subject">
+                            <label class="uk-form-label" for="form-stacked-text">Email</label>
+                            <input class="uk-input" type="text" name="Email">
                         </div>
                         <div class="uk-width-1-1">
-                            <textarea name="" id="" cols="30" rows="8" class="uk-textarea" placeholder="Your message"></textarea>
+                            <label class="uk-form-label" for="form-stacked-text">Subject</label>
+                            <input class="uk-input" type="text" name="Subject">
+                        </div>
+                        <div class="uk-width-1-1">
+                            <label class="uk-form-label" for="form-stacked-text">Message</label>
+                            <textarea name="" id="" cols="30" rows="8" class="uk-textarea" name="Your message"></textarea>
                         </div>
                         <div class="uk-width-1-1">
                             <button class="uk-button uk-button-default">Submit</button>
