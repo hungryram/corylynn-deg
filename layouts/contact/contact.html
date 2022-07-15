@@ -14,7 +14,7 @@
                     <ul class="uk-list uk-margin-medium-top">
                         <li><a href="mailto:{{ .Site.Data.profile.contact_information.email }}" class="uk-dark"><span href="#" uk-icon="icon: mail" class="uk-margin-small-right"></span><span class="uk-text-middle">{{ .Site.Data.profile.contact_information.email }}</span></a></li>
                       </ul>
-                    {{ if .Site.Data.profile.social_media.instagram }}<a href="https://www.instagram.com/corylynndegdesign/" target="_blank" class="uk-margin-small-right" uk-icon="instagram"></a>{{ end }}
+                    {{ if .Site.Data.profile.social_media.instagram }}<a href="{{ .Site.Data.profile.social_media.instagram }}" target="_blank" class="uk-margin-small-right" uk-icon="instagram"></a>{{ end }}
                     {{ if .Site.Data.profile.social_media.facebook }}<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>{{ end }}
                     {{ if .Site.Data.profile.social_media.pinterest }}<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="pinterest"></a>{{ end }}
                     {{ if .Site.Data.profile.social_media.twitter }}<a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="twitter"></a>{{ end }}
