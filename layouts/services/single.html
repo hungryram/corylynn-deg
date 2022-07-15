@@ -1,0 +1,27 @@
+{{ define "main" }}
+    <div class="uk-section">
+        <div class="uk-container">
+            <div>
+                <div class="uk-margin-large-bottom uk-text-center">
+                    <h1>{{ .Title }}</h1>
+                </div>
+                <div>
+                    <div class="uk-child-width-1-2@s uk-flex uk-flex-center uk-flex-middle" uk-grid>
+                        <div>
+                            <img src="{{ .Params.image }}" alt="" style="box-shadow: 20px 20px 0px 0px #e3a6ae;" width="500">
+                        </div>
+                        <div>
+                            
+                            <div>
+                                {{ .Content }}
+                                <div class="uk-margin-large-top">
+                                    <a href="/contact/" class="uk-button uk-button-primary">Get in Touch</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{ end }}

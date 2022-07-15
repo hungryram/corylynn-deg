@@ -1,32 +1,83 @@
-<div class="top-navbar">
-    <nav uk-navbar style="background:#e7c0c9">
-        <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav">
-                <li class="uk-white"><a href="https://www.instagram.com/corylynndegdesign/" class="uk-white" uk-icon="icon:instagram;ratio:1.2"></a></li>
-            </ul>
+{{ $mainMenu := .Site.Data.menu }}
+
+
+<div class="uk-visible@s">
+    <div class="top-navbar">
+        <nav uk-navbar style="background:#e7c0c9">
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-white"><a href="https://www.instagram.com/corylynndegdesign/" class="uk-white" uk-icon="icon:instagram;ratio:1.2"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-center" style="padding-top:20px;">
+            <a class="uk-navbar-item uk-logo" href="{{ .Site.BaseURL }}">
+                <img src="/uploads/corylynn-logo.jpg" alt="Corylynn Web Design" width="450">
+            </a>
+        </div>
+    </nav>
+    <nav class="uk-navbar-container" uk-navbar style="border-top:1px solid #ccc;margin-top:20px">
+        <div class="uk-container">
+            <div class="uk-navbar-center uk-nav">
+    
+                <ul class="uk-navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/gallery">Gallery</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+        
+            </div>
         </div>
     </nav>
 </div>
-<nav class="uk-navbar-container" uk-navbar>
-    <div class="uk-navbar-center" style="padding-top:20px;">
-        <a class="uk-navbar-item uk-logo" href="{{ .Site.BaseURL }}">
-            <img src="/uploads/corylynn-deg-logo.png" alt="">
-        </a>
-    </div>
-</nav>
-<nav class="uk-navbar-container" uk-navbar style="border-top:1px solid #ccc;margin-top:20px">
-    <div class="uk-container">
-        <div class="uk-navbar-center">
+
+
+
+
+
+{{/*  MOBILE  */}}
+
+<div uk-sticky="animation: uk-animation-slide-top-medium; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-dark; cls-inactive: top: 400">
+    <nav class="uk-navbar uk-navbar-container uk-hidden@m uk-box-shadow-small" style="padding: 5px 15px;" uk-navbar="dropbar: true;mode: click">
+        <div class="uk-navbar-left">
+            <a href="{{ .Site.BaseURL }}">
+                <img src="/uploads/corylynn-logo.jpg" alt="Corylynn Web Design" width="300">
+            </a>
+        </div>
+        <div class="uk-navbar-right">
 
             <ul class="uk-navbar-nav">
-                <li><a href="/">Home</a></li>
                 <li>
-                    <a href="/about">About</a>
+                    <a href="#" uk-toggle>
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon"><rect y="9" width="20" height="2"></rect><rect y="3" width="20" height="2"></rect><rect y="15" width="20" height="2"></rect></svg>
+                    </a>
+                    <div class="uk-navbar-dropdown" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-center;mode:click">
+                        <ul class="uk-nav uk-navbar-dropdown-nav uk-text-center">
+                            {{ range $mainMenu.menu }}
+                            <li>
+                                {{ if .menu }}
+                                <a href="#">{{ .name }}<span class="uk-margin-small-left" uk-icon="chevron-down"></span></a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        {{ range .menu }}
+                                        <li class="uk-active"><a href="{{ .link | absURL }}">{{ .name }}</a></li>
+                                        {{ end }}
+                                    </ul>
+                                </div>
+                                {{ else }}
+                                <a href="{{ .link | absURL }}">{{ .name }}</a>
+                                {{ end }}
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
                 </li>
-                <li><a href="/gallery">Gallery</a></li>
-                <li><a href="/contact">Contact</a></li>
             </ul>
-    
+
         </div>
+    </nav>
     </div>
-</nav>
