@@ -1,5 +1,5 @@
 +++
 title = "Gallery"
-[gallery]
+[[gallery]]
 image = "/uploads/kissing-on-boat.jpeg"
 +++
