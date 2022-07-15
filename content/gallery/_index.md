@@ -1,4 +1,4 @@
 +++
 title = "Gallery"
-gallery = []
+gallery = ["/uploads/kissing-on-boat.jpeg"]
 +++
