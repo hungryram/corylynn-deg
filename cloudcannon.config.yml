@@ -62,9 +62,6 @@ _inputs:
   gallery:
     style: 'modal'
     type: array
-    values:
-        value: 
-          image:
   zip-codes:
     label: Zip Code
   equal_housing_logo:
