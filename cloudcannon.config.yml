@@ -1,0 +1,158 @@
+collections_config:
+  data:
+    name: 'Settings'
+    icon: admin_panel_settings
+  pages:
+    output: true
+    url: "/content/[slug]"
+    add_options:
+      - name: Add Page
+        href: "cloudcannon:explore/content/.md🆕/content/schemas/pages.md"
+    _enabled_editors:
+      - visual
+      - content
+  blog:
+    output: true
+    url: "/content/blog/[slug]"
+    add_options:
+      - name: Add Post
+        href: "cloudcannon:explore/content/blog/.md🆕/content/schemas/blog.md"
+    _inputs:
+      author:
+        type: select
+        options:
+          values: collections.our-team
+    _enabled_editors:
+      - visual
+      - content
+  gallery:
+    _enabled_editors:
+      - visual
+      - content
+    output: true
+    url: "/content/gallery"
+  legal:
+    icon: policy
+    _enabled_editors:
+      - visual
+      - content
+    add_options:
+      - name: Add Policy
+        href: "cloudcannon:explore/content/legal/.md🆕/content/schemas/legal.md"
+collection_groups:
+  - heading: Profile and Settings
+    collections:
+      - data
+  - heading: Pages
+    collections:
+      - pages
+      - listings
+      - our-team
+      - offices
+      - partners
+      - press
+      - legal
+  - heading: Blog
+    collections:
+      - blog
+paths:
+  # The default location for newly uploaded files, relative to source
+  uploads: static/uploads/
+_inputs:
+  gallery:
+    style: 'modal'
+    type: array
+    values:
+        value: 
+          image:
+  zip-codes:
+    label: Zip Code
+  equal_housing_logo:
+    type: switch
+  mls_logo:
+    type: switch
+  realtor_logo:
+    type: switch
+  call_to_action_link:
+    type: url
+  call_to_action_label:
+    type: text
+  remove_call_to_action:
+    type: checkbox
+  is_post:
+    hidden: true
+  idx_title_background_color:
+    type: color
+  idx_title_text_color:
+    type: color
+  background_color:
+    type: color
+  custom_css:
+    type: textarea
+    comment: Custom CSS code. Include the style tag
+  custom_script:
+    type: textarea
+    comment: Custom script tag in the header
+  custom_closing_script:
+    type: textarea
+    comment: Custom script tag before the closing body tag
+  main_photo:
+    type: image
+  onefivetwo:
+    type: image
+    label: 152x152
+  onefourfour:
+    label: 144x144
+    type: image
+  onetwotwo:
+    label: 122x122
+    type: image
+  oneonefour:
+    label: 114x114
+    type: image
+  oneeightzero:
+    label: 180x180
+    type: image
+  seventwo:
+    label: 72x72
+    type: image
+  form_disclaimer:
+    type: markdown
+  languages:
+    type: array
+  specialty:
+    type: array
+    label: Specialties
+  website:
+    type: text
+    comment: Include the full URL with https://
+  body:
+    type: markdown
+  logo:
+    type: image
+  favicon:
+    type: image
+  dark_logo:
+    type: image
+  links:
+    type: color
+  accent:
+    type: color
+  disclaimer:
+    type: textarea
+  footer_bio:
+    type: textarea
+  video_link:
+    comment: It is recommended to host videos elsewhere and paste the link here.
+    type: text
+  price:
+    comment: Include the dollar sign.
+  photo:
+    type: image
+_structures:
+  menu:
+    values:
+      - value:
+          name:
+          link:
+          menu:

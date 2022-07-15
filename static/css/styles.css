@@ -38,7 +38,7 @@ body a:hover {
 }
 
 .uk-white {
-    color: #fff;
+    color: #fff!important;
 }
 
 p.hr-dark {
@@ -104,6 +104,14 @@ textarea.uk-textarea {
 }
 
 /* NAVBAR */
+ul.uk-navbar-nav>li>a {
+    color: #999;
+    text-transform: capitalize;
+    transition: .1s ease-in-out;
+    transition-property: color,background-color;
+    font-size: 16px;
+}
+
 
 nav.uk-navbar-container:not(.uk-navbar-transparent) {
     background: #fff;
