@@ -1,7 +1,7 @@
 +++
-title = "Holidays"
+title = "Holiday Designs"
 description = ""
-image = "/uploads/2.jpg"
+image = "/uploads/holiday.jpg"
 [search_engine_optimization]
 title_tag = "Photoshoots | Corylynn Deg Designs"
 meta_description = ""

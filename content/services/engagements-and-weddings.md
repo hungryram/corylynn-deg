@@ -1,7 +1,7 @@
 +++
 title = "Engagements and Weddings"
 description = ""
-image = "/uploads/1.jpg"
+image = "/uploads/secret-garden.jpg"
 [search_engine_optimization]
 title_tag = "Photoshoots | Corylynn Deg Designs"
 meta_description = ""
