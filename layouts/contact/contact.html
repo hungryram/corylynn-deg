@@ -31,7 +31,7 @@
         <div class="uk-flex uk-flex-middle">
             <div class="uk-width-1-1">
                 <div class="form-container">
-                    <form action="/thank-you" class="uk-grid-small" uk-grid data-netlify="true" name="Contact Form" method="POST" data-netlify-recaptcha="true" id="contact-form">
+                    <form action="/thank-you" class="uk-grid-small" uk-grid data-netlify="true" name="Contact Form" method="POST" data-netlify-recaptcha="true" id="contact-form" action="/thank-you">
                         <div class="uk-width-1-1">
                             <label class="uk-form-label" for="form-stacked-text">Name</label>
                             <input class="uk-input" type="text" name="Name">
@@ -46,13 +46,10 @@
                         </div>
                         <div class="uk-width-1-1">
                             <label class="uk-form-label" for="form-stacked-text">Message</label>
-                            <textarea name="" id="" cols="30" rows="8" class="uk-textarea" name="Your message"></textarea>
+                            <textarea name="Message" id="" cols="30" rows="8" class="uk-textarea"></textarea>
                         </div>
                         <div class="uk-width-1-1">
                             <button class="uk-button uk-button-default">Submit</button>
-                        </div>
-                        <div class="uk-width-1-1">
-                            <div data-netlify-recaptcha="true"></div>
                         </div>
                     </form>
                 </div>
