@@ -4,6 +4,8 @@ title = "Gallery"
 [[gallery]]
 image = "/uploads/kissing-on-boat.jpeg"
 
+[[gallery]]
+video = "/uploads/christmas-vid.mp4"
 
 [[gallery]]
 image = "/uploads/wedding-kiss.jpeg"
@@ -88,5 +90,6 @@ image = "/uploads/white-xmas-tree.jpeg"
 
 [[gallery]]
 image = "/uploads/red-hair-flowers.jpeg"
+
 +++
 
