@@ -1,7 +1,7 @@
 +++
 title = "Holiday Designs"
 description = ""
-image = "/uploads/holiday.jpg"
+image = "/uploads/white-xmas-tree.jpeg"
 [search_engine_optimization]
 title_tag = "Photoshoots | Corylynn Deg Designs"
 meta_description = ""

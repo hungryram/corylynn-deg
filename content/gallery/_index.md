@@ -72,6 +72,21 @@ image = "/uploads/_SecretGardenStyledShoot-160.jpg bird cages.jpg"
 image = "/uploads/_SecretGardenStyledShoot-204.jpg"
 
 [[gallery]]
-image = "/uploads/_unnamed-26.jpg"
+image = "/uploads/floral-cup.jpeg"
+
+[[gallery]]
+image = "/uploads/flowers2.jpeg"
+
+[[gallery]]
+image = "/uploads/Image.jpeg"
+
+[[gallery]]
+image = "/uploads/purple-bouqet.jpeg"
+
+[[gallery]]
+image = "/uploads/white-xmas-tree.jpeg"
+
+[[gallery]]
+image = "/uploads/red-hair-flowers.jpeg"
 +++
 
