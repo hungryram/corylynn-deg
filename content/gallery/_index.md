@@ -12,9 +12,6 @@ image = "/uploads/wedding-kiss.jpeg"
 image = "/uploads/wedding-boat.jpeg"
 
 [[gallery]]
-image = "/uploads/xmas-tree.jpeg"
-
-[[gallery]]
 image = "/uploads/714.jpg"
 
 [[gallery]]
@@ -22,9 +19,6 @@ image = "/uploads/floral-gathering.jpeg"
 
 [[gallery]]
 image = "/uploads/secret-garden.jpg"
-
-[[gallery]]
-image = "/uploads/events.jpg"
 
 [[gallery]]
 image = "/uploads/holiday.jpg"
