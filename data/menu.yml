@@ -11,6 +11,9 @@ menu:
   - name: Gallery
     link: /gallery
     menu:
+  - name: Floral Club
+    link: /floral-club
+    menu:
   - name: Contact
     link: /contact
     menu:
